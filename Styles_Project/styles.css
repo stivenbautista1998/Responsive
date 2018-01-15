@@ -1,0 +1,265 @@
+/*contenido general +++++++++++++++++*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrapper{
+  max-width: 900px;
+  background-color: #D9E2E6;
+  margin: 0 auto; 
+}
+
+body{
+  background: url("../Image/madera.jpg") repeat-y;
+  background-size: contain;
+  font-family: "Times New Roman";
+  line-height: 1.5em;
+}
+
+div.seccion-contenido{
+  float: right;
+  width: 77%;
+  margin-right: 0.8%; 
+  padding: .4%;
+  text-align: justify;
+}
+
+/*+++++++++++++++++++++++++++++++++++*/
+
+
+
+/* cabezera de la pagina++++++++*/
+
+.cabezera{
+  margin: .3em;
+  padding: 3em 0;
+  text-align: center;
+  background: #066F50;
+}
+
+header > h1{
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+/*+++++++++++++++++++++++++++++++*/
+
+
+
+/*navegacion de la pagina +++++++*/
+
+div.navegacion ul{
+  list-style: none;
+}
+
+.navegacion{
+  float: left;
+  width: 20%;
+  display: inline;
+  margin: 2% 0%;
+  margin-left: 1%;
+}
+
+div.navegacion ul li a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  border-bottom: 2px solid green;
+  font-weight: bold;
+  padding: 0.8em;
+  background-color: #7FCAEB;
+  border-radius: 6px;
+  font-size: 1.1em;
+  margin-bottom: .3em;
+}
+
+
+div.navegacion ul li a:hover{
+  background: rgba(127, 202, 235, 0.5); /*Negro palido*/
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+/*+++++++++++++++++++++++++++++++++*/
+
+
+
+/*articulo de contenidos +++++++*/
+
+article.articulo-contenido{
+  background-color: #FFF;
+  padding: 3%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 .5em #8E8E8E;
+}
+
+article > h2{
+  padding: 2% 0%;
+  margin-bottom: .3em;
+}
+
+img.Imagen-contenido{
+  border-radius: 6px;  
+}
+
+div.contenedor-imagenes{
+  display: inherit;
+  text-align: center; 
+}
+
+div.contenedor-imagenes > img{
+   margin-right: 4%;
+}
+
+article table.tabla-contenido{
+  border: 1px solid red;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.tabla-contenido th, table.tabla-contenido td{
+  border: 1px solid red;
+  text-align: center; 
+}
+
+table.tabla-contenido th{
+  background-color: #4CBF4C;
+}
+
+table caption{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+table.tabla-contenido td:hover{
+  background-color: #7FCAEB; 
+}
+
+form{
+  text-align: center;
+}
+
+form label{
+  display: block;
+  margin-top: .4em;
+  font-size: 20px; 
+}
+
+form input[type="text"], input[type="number"], input[type="tel"],
+textarea.caja-texto, input[type="gmail"], input[type="password"], select.seleccionador{
+  font-size: 1em;
+  padding: 7px 7px;
+  border-radius: 5px;
+  width: 50%;
+  margin: .5em;
+  border: 1px solid green; 
+}
+
+form textarea.caja-texto{
+  margin-top: .7em;
+  margin-bottom: 2em;
+  
+}
+
+form input[type="file"]{
+  font-size: 1em;
+  width: 50%;
+  margin: .5em;
+  margin-top: .5em;
+}
+
+input.boton-normal{
+  font-size: 1em;
+  padding: 7px 7px;
+  border-radius: 5px;
+  width: 25%;
+  margin: .5em;
+  border: 1px solid green; 
+}
+
+input.active-botton:hover{
+  color: #000;
+  background-color: rgba(101, 143, 241, 0.5);
+}
+
+input.active-botton{
+  color: #1A4099;
+}
+
+input.active-botton:active{
+  color: #1A4099;
+  background-color: rgb(101, 143, 241);
+}
+
+form fieldset.cont-general{
+  border-radius: 5px;
+}
+
+.contenedor-radio{
+  margin: .5em;
+}
+
+.group-content{
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+form label.label-radio, label.label-checkbox{
+  display: inline;
+}
+
+form input[type="checkbox"]{
+  margin-bottom: 1.2em;
+}
+
+.grupo{
+  display: block;
+}
+
+.boton-form{
+  display: block;
+  margin-top: .7em;
+}
+
+/*++++++++++++++++++++++++++++++*/
+
+
+
+/*pie de la pagina ++++++++++++*/
+
+.pie-pagina{
+  background-color: #066F50;
+  margin: .3em;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+h2.title-section{
+  font-size: 2em;
+  font-weight: normal;
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+/*++++++++++++++++++++++++++++++*/
+
+
+
+/**/
+
+
+/*-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;*/
+
+
+
+/*  
+trancition-duration: 1s;
+*/

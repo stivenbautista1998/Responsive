@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My app responsive</title>
+  <link rel="stylesheet" type="text/css" href="Styles_Project/styles.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header class="cabezera">
+      <h1>Titulo de App Responsive</h1>
+    </header>
+
+    <div class="navegacion">
+      <nav>
+        <ul>
+          <li><a href="#title-img">Imagenes</a></li>
+          <li><a href="#title-table">Tabla</a></li>
+          <li><a href="#title-form">Formulario</a></li>
+          <li><a href="#title-videos">Videos</a></li>
+          <li><a href="#title-todos">Todo</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="seccion-contenido">
+      <section class="main-section">
+        <h2 class="title-section">Seccion Principal</h2>
+
+        <article class="articulo-contenido">
+          <h2 id="title-img">Imagenes: </h2>
+          <div class="contenedor-imagenes">
+            <img src="Image/ideas.jpg" alt="imagen sobre las ideas que puede realizar el software" width="88%" class="Imagen-contenido">
+            <img src="Image/tecno_1.jpg" alt=" sobre tecnologia Nº1" width="40%" class="Imagen-contenido">
+            <img src="Image/tecno_3.jpg" alt="imagen sobre tecnologia Nº2" width="44%" class="Imagen-contenido">
+          </div>
+        </article>
+
+        <article class="articulo-contenido">
+          <h2 id="title-table">Tabla: </h2>
+          
+          <table summary="Esta tabla muestra una serie de datos." class="tabla-contenido">
+            <caption>Tabla de Datos</caption>
+            <tr>
+              <th scope="col">Colum A</th>
+              <th scope="col">Colum B</th>
+              <th scope="col">Colum C</th>
+              <th scope="col">Colum D</th>
+              <th scope="col">Colum E</th>
+              <th scope="col">Colum F</th>
+            </tr>
+
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+              <td colspan="2">Dato 5</td>
+            </tr>
+            <tr>
+              <td>Dato 2</td>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+              <td colspan="2">Dato 5</td>
+              <td>Dato 6</td>
+            </tr>
+              <td>Dato 3</td>
+              <td>Dato 4</td>
+              <td colspan="2">Dato 5</td>
+              <td>Dato 6</td>
+              <td>dato 7</td>
+            <tr>
+              <td>Dato 4</td>
+              <td colspan="2">Dato 5</td>
+              <td>Dato 6</td>
+              <td>Dato 7</td>
+              <td>Dato 8</td>
+            </tr>
+            <tr>
+              <td colspan="2">Dato 5</td>
+              <td>Dato 6</td>
+              <td>Dato 7</td>
+              <td>Dato 8</td>
+              <td>Dato 9</td>
+            </tr>
+          </table>
+        </article>
+
+        <article class="articulo-contenido">
+          <h2 id="title-form">Formulario: </h2>
+
+          <!--enctype="multipart/form-data" : se utiliza en los formularios que permite abjuntar archivos-->
+          <form action="#" method="POST" enctype="multipart/form-data" class="form-contenido">
+            <fieldset class="cont-general">
+              <legend>Datos personales</legend>
+              
+              <label for="txt_nombres">Ingrese sus nombres</label>
+              <!--Se coloca como parametro el id en el atributo for del label-->
+              <input type="text" name="txt_nombres" id="txt_nombres" maxlength="30" placeholder="Nombres..." required="required">
+
+              <label for="txt_apellidos">Ingrese sus apellidos</label>
+              <input type="text" name="txt_apellidos" id="txt_apellidos" placeholder="Apellidos..." required="required">
+
+              <label for="num_edad">Ingrese su edad: </label>
+              <input type="number" name="num_edad" id="num_edad" required="required">
+
+              <fieldset class="group-content">
+                <legend>Ingrese su sexo</legend>
+                  <div class="contenedor-radio">
+                    <input type="radio" name="rd_sexo" id="rd_male" value="male" checked="checked">
+                    <label for="rd_male" class="label-radio">Masculino</label>
+
+                    <input type="radio" name="rd_sexo" id="rd_female" value="female">
+                    <label for="rd_female" class="label-radio">Femenino</label>
+                </div>
+              </fieldset>
+
+              <label for="txt_tel">Ingrese su telefono</label>
+              <input type="tel" name="txt_tel" id="txt_tel" placeholder="## - ##########">
+
+              <label for="area_coment">Comentarios: </label>
+              <textarea id="area_coment" name="area_coment" class="caja-texto" cols="54" rows="5"></textarea>
+
+            </fieldset>
+
+            <fieldset class="cont-general">
+              <legend>Datos de cuenta</legend>
+              
+              <label for="txt_user">Ingrese su usuario: </label>
+              <input type="gmail" name="txt_user" id="txt_user" placeholder="usuario@ejemplo.com" required="required">
+
+              <label for="txt_pass">Ingrese su contraseña: </label>
+              <input type="password" name="txt_pass" id="txt_pass" required="required">
+
+              <label for="txt_pass_rep">Ingrese de nuevo su contraseña: </label>
+              <input type="password" name="txt_pass_rep" id="txt_pass_rep" required="required">
+
+              <label for="abjunto">Seleccionar hoja de vida: </label>
+              <input type="file" name="abjunto" id="abjunto">
+
+              <!--otras propiedades muy utiles serian size="numero" y multiple="multiple", que permiten seleccionar más de un elemento y mostrar la cantidad de opciones a mostrar respectivamente.-->
+              <label for="tipo_user">Tipo de usuario: </label>
+              <select id="tipo_user" name="tipo_user" class="seleccionador">
+                <optgroup label="Usuario">
+                  <option value="" selected="selected">--selecciona--</option>
+                  <option value="normal">Comun</option>
+                  <option value="admin">Administrador</option>
+                  <option value="operario">Operario</option>
+                  <option value="otro">Otro</option>
+                </optgroup>
+                <optgroup label=">Cargo">
+                  <option value="subscrip">Suscrito</option>
+                  <option value="general">General</option>
+                  <option value="alto">Alto</option>
+                </optgroup>
+              </select>
+
+              <label for="imagen">Esta es mi imagen</label>
+              <input type="image" name="imagen" id="imagen" src="Image/image.png" alt="imagen sobre una foto">
+
+              <label for="txt_code">Codigo: </label>
+              <input type="text" name="txt_code" id="txt_code" value="YYY - XX - ZXY" readonly="readonly">
+
+              <div class="grupo">
+                <input type="checkbox" name="cb_acepto" id="cb_acepto" value="Acepto" required="required">
+                <label for="cb_acepto" class="label-checkbox">Acepto los terminos de uso</label>
+              </div>
+
+            </fieldset>
+            <input type="submit" name="btn_enviar" value="Enviar" class="boton-normal active-botton">
+            <input type="reset" class="boton-normal active-botton" name="limpiar" value="Limpiar">
+
+            <input type="hidden" name="url_previa" value="/articulo/primero.html">
+            <!-- type="hidden" : Los campos ocultos se emplean para añadir información oculta en el formulario, este elemento no es visible por el usuario.-->
+
+            <input type="button" class="boton-normal" name="btn_limpiar" value="Deshabilitado" disabled="disabled"> <!--disabled="disabled" : El control aparece deshabilitado y su valor no se envía al servidor junto con el resto de datos-->
+          </form>
+
+        </article class="articulo-contenido">
+
+        <article class="articulo-contenido">
+          <h2 id="title-videos">Video: </h2>
+
+          <video controls width="100%" class="video-contenido" autoplay>
+            <source src="Multimedia/video_phone.mp4" type="video/mp4">
+              No se puede visualizar el video en su navegador
+          </video>
+          
+        </article>
+
+        <article class="articulo-contenido">
+          <h2 id="title-todos">Indice 5</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum suscipit voluptatem, harum accusamus, itaque omnis deleniti accusantium repellat reprehenderit quam fugiat quia minima enim rem cumque facere vel! Eum.</p>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum suscipit voluptatem, harum accusamus, itaque omnis deleniti accusantium repellat reprehenderit quam fugiat quia minima enim rem cumque facere vel! Eum.</p>
+        </article>
+
+      </section>
+    </div>
+
+    <footer class="pie-pagina"> 
+      <p>DERECHOS DE AUTOR © Stiven Bautista</p>
+      <p>CORREO * stiven.bautista@koombea.com</p>
+      <p>CELULAR * 3056455632</p>
+    </footer>
+  </div>
+</body>
+</html>
