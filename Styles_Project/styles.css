@@ -73,10 +73,13 @@ div.navegacion ul li a{
   border-radius: 6px;
   font-size: 1.1em;
   margin-bottom: .3em;
+  transition: 0.5s;
 }
 
 
 div.navegacion ul li a:hover{
+  transform: scale(1.2);
+  letter-spacing: 0.1em;
   background: rgba(127, 202, 235, 0.5); /*Negro palido*/
   border-top: 4px solid black;
   border-bottom: 4px solid black;
