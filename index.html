@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>My app responsive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--es necesario colocarlo para los query-->
   <link rel="stylesheet" type="text/css" href="Styles_Project/styles.css">
 </head>
 
@@ -108,11 +109,15 @@
               <fieldset class="group-content">
                 <legend>Ingrese su sexo</legend>
                   <div class="contenedor-radio">
-                    <input type="radio" name="rd_sexo" id="rd_male" value="male" checked="checked">
-                    <label for="rd_male" class="label-radio">Masculino</label>
+                    <div>
+                      <input type="radio" name="rd_sexo" id="rd_male" value="male" checked="checked">
+                      <label for="rd_male" class="label-radio">Masculino</label>
+                    </div>
 
-                    <input type="radio" name="rd_sexo" id="rd_female" value="female">
-                    <label for="rd_female" class="label-radio">Femenino</label>
+                    <div>
+                      <input type="radio" name="rd_sexo" id="rd_female" value="female">
+                      <label for="rd_female" class="label-radio">Femenino</label>
+                    </div>
                 </div>
               </fieldset>
 
@@ -188,7 +193,7 @@
               No se puede visualizar el video en su navegador
           </video>
 
-          <audio controls autoplay>
+          <audio controls autoplay class="audio-responsive">
             <source src="Multimedia/music_fondo.mp3" type="audio/mp3">
             No se puede reproducir la musica
           </audio>
