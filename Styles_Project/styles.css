@@ -228,7 +228,29 @@ form input[type="checkbox"]{
   margin-top: .7em;
 }
 
+.video-contenido{
+  transition: 0.5s;
+}
+
+.video-contenido:hover{
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
 /*++++++++++++++++++++++++++++++*/
+
+
+
+/*Media Queries +++++++++++++++++*/
+
+@media screen and (max-width: 950px){
+    #wrapper{
+    margin-left: 5%; 
+    margin-right: 5%;
+  }
+} 
+
+/*+++++++++++++++++++++++++++++++*/
 
 
 
